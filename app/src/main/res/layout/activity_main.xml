@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/input"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/outputRational"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/outputDecimal"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/question"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/less"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/less"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/more"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/colon"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_bracket"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/left_bracket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/right_bracket"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/right_bracket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/clear"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/backspace"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/backspace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/seven"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/seven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/eight"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/eight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/nine"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/nine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/multiply"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/multiply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/four"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/five"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/six"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/six"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/div"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/div"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/one"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/two"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/three"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/plus"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/zero"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/dot"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/dot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/equals"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/equals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:clickable="true"/>
+
+
+        <TextView
+            android:id="@+id/minus"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/minus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>
